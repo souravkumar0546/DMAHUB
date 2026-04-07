@@ -1,0 +1,54 @@
+{
+  "taxonomy_key": "ZSC1",
+  "categories": {
+    "Analytical Consumables (YS17)": {
+      "definition": "Items used in analytical testing, measurement, or laboratory instrumentation.",
+      "examples": "Chromatography columns, filter papers, cuvettes & Etc"
+    },
+    "Process Consumables (YS18)": {
+      "definition": "Materials consumed during manufacturing or process operations, not part of the final product.",
+      "examples": "Filters, process gaskets,Cell line, blood matrix Etc, Gases"
+    },
+    "Safety Consumables (YS19)": {
+      "definition": "Disposable or regularly replaced items used for personal or workplace safety.",
+      "examples": "PPE, gloves, masks, safety goggles & Etc, ETP chemicals, scrubber"
+    },
+    "Engineering & Maintenance Consumables (YS20)": {
+      "definition": "Items consumed during equipment upkeep, repairs, or technical services.",
+      "examples": "Lubricants, sealants, gaskets, tapes, electrical connectors used for upkeep of lab/process equipment & Etc, Boiler /utility consumable"
+    },
+    "Laboratory Supplies (YS21)": {
+      "definition": "Everyday laboratory supplies used across multiple activities.",
+      "examples": "Glassware, plasticware, pipette tips, weighing boats, lab cleaning materials, sample storage items & Etc, Diagnostics"
+    },
+    "Media & Buffers (YS22)": {
+      "definition": "Ready-to-use or prepared formulations that provide a controlled chemical or biological environment for growth, reaction, or stabilization in laboratory or production processes.",
+      "examples": "Cell culture media, bacterial growth media, phosphate-buffered saline (PBS), Tris buffer."
+    },
+    "Non-CAS based Chemicals (YS23)": {
+      "definition": "Chemicals without CAS Nos. but getting utilized using Catalogue Nos.",
+      "examples": ""
+    },
+    "RLD & Reference Standards (YS24)": {
+      "definition": "In the context of pharmaceuticals, reference standards are highly characterized materials used as benchmarks to ensure the identity, purity, potency, and quality of active pharmaceutical ingredients (APIs) and final products. They are essential for analytical testing and regulatory compliance.\nA Reference Manufactured Product is a product that has been manufactured under defined and approved conditions and is used as a benchmark or comparator for evaluation, control, verification, or regulatory purposes.",
+      "examples": ""
+    },
+    "Medicinal Supplies (YS26)": {
+      "definition": "Medicine Supplies refer to over‑the‑counter (OTC) medicines that do not require a medical prescription and are procured by the organization exclusively for employee health and welfare. These medicines are used and dispensed through the Occupational Health Centre (OHC) for first aid, minor ailments, preventive care, and immediate medical support to employees.",
+      "examples": "Injections, Tablets, medicines etc, Animal feed, Animal diet"
+    },
+    "Lab Reagents & QC Supplies (YS27)": {
+      "definition": "QC Supplies and Laboratory Reagents include chemicals, reagents, reference materials, standards, solvents, and consumables used in Quality Control (QC) and laboratory testing activities to analyze, test, verify, and release raw materials, intermediates, finished products, and in‑process samples in compliance with GMP and regulatory requirements.",
+      "examples": "Callibrator, control, reagents, antibodies etc, Analytical reagents and chemicals\nBuffers, acids, bases, and solvents\nReference standards and control samples\nCulture media and test kits\nVolumetric solutions and laboratory consumables used for testing"
+    },
+    "Molecular Biology Consumables (YS30)": {
+      "definition": "Molecular Biology Consumables are single‑use or limited‑use laboratory materials, reagents, and kits used in molecular biology workflows to support DNA, RNA, protein, and cell‑based experiments, including sample preparation, amplification, cloning, expression, detection, and analysis.",
+      "examples": "Gene, Protein, DNA, RNA, Neuclotides, microbes,marker"
+    },
+    "Process & Testing Solvents (YS64)": {
+      "definition": "Process and Testing Solvents are organic or inorganic liquids used during manufacturing (process) and quality control (testing) activities to support chemical reactions, extraction, purification, cleaning, sample preparation, and analytical testing of raw materials, intermediates, APIs, and finished products.",
+      "examples": ""
+    }
+  },
+  "override_rules": "- Having a catalogue number does NOT mean Non-CAS. Most chemicals have both CAS and catalogue numbers.\n- Common chemicals (acids, bases, solvents, salts like Acetone, NaOH, HCl, Methanol, NaCl) are ALWAYS Lab Reagents & QC Supplies — NEVER Non-CAS.\n- A drug name (e.g. Telmisartan, Epinephrine, Cisplatin) bought in mg quantities from REFERENCE STANDARD vendors (Cayman, Clearsynth, TRC, MedChemExpress, Tocris, LGC, Cerilliant, USP) → RLD & Reference Standards, NOT Medicinal Supplies.\n- But a drug/antibiotic name (e.g. Gentamicin, Penicillin, Amphotericin B) from CELL CULTURE vendors (Gibco, Lonza, Cytiva, Thermo) at working concentrations (mg/mL) is a cell culture supplement → Lab Reagents & QC Supplies, NOT RLD.\n- Catalysts (Palladium on Carbon, Platinum oxide, Raney Nickel) are NOT reference standards → Lab Reagents & QC Supplies or Process Consumables.\n- Deuterated compounds (D3, D4, D6, D8 in the name) are ALWAYS reference standards → RLD & Reference Standards.\n- Drug metabolites (Hydroxy-X, Desmethyl-X, Nor-X) are ALWAYS reference standards → RLD & Reference Standards.\n- Medicinal Supplies is ONLY for patient-ready finished dosage forms (tablet strips, injection vials, syrups) bought from a PHARMACY for an employee clinic — NOT for lab-grade compounds from research suppliers.\n- Process & Testing Solvents are organic or inorganic liquids (Methanol, Acetone, IPA, DCM, Hexane, Acetonitrile) used in manufacturing or QC testing — classify here ONLY when description clearly indicates solvent use in process/testing."
+}
